@@ -33,5 +33,5 @@ mongoose.connect('mongodb://172.17.0.2/telephonebook', function(err){
 });
 
 app.get('/', function(req, res){
-    res.send("hello world");
+    res.send("marco should suck a lot more dick");
 });
