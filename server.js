@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', api);
 
 //Database VM with IP 192.168.20.3
-mongoose.connect('mongodb://192.168.20.3/telephonebook', function(err){
+mongoose.connect('mongodb://172.17.0.2/telephonebook', function(err){
     if(err){
         console.log("Can't connect to database");
     } else {
