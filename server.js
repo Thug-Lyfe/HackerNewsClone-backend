@@ -17,7 +17,7 @@ app.use('/api', api);
 
 //Database VM with IP 192.168.20.3
 var conurl = 'mongodb://localhost/hackernews';
-if(process.env.NODE_ENV){
+if(process.env.NODE_ENV == 'production'){
     conurl = 'mongodb://172.17.0.2/hackernews'
 }
 
